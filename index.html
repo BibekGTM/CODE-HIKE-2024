@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img class="backgroundImg" src="background.jpg">
     <div class="container">
-        <div class="login-section">
-            <input id="usernameBtn" class="button" placeholder="Username">
-            <input id="usernameBtn" class="button" placeholder="Password">
-            <button class="loginBtn">Login</button>
+        <div class="title">
+            <p class="titlePrompt">Log In</p>
         </div>
-        
+        <input id="usernameBtn" class="button" placeholder="Username">
+        <input id="passwordBtn" class="button" placeholder="Password" type="password">
+        <div id="forgotPassword">
+            <p class="prompt">forgot password?</p>
+            <p id="wrongPassword" class="prompt-1"></p>
+        </div>
+        <button id="loginBtn" class="loginBtn">Login</button>
+        <div id="notMember">
+            <p class="prompt">
+                Not a member? <a href="https://www.youtube.com">SignUP</a>
+            </p>
+        </div>       
     </div>
-
-
     <script src="index.js"></script>
 </body>
 </html>
