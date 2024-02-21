@@ -1,21 +1,31 @@
 body {
-    background-color: rgb(90, 90, 90);
+    background-color: #242424;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.backgroundImg {
+    max-width: 100%;
+    height: 100%;
 }
 
 .container {
+    border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
-    background-color: rgb(172, 172, 172);
-    
+    background-color: #3e3e3e;
+}
+.titlePrompt {
+    color: white;
+    font-size: 2.5em;
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 0.2em;
 }
 .loginBtn, input {
     display: block;
-
-    
 }
 input {
     padding-left: 20px;
@@ -28,3 +38,35 @@ input {
     background-color: white ;
 
 }
+.loginBtn {
+    margin-left: 50%;
+    transform: translate(-50%);
+    border: none;
+    padding: 10px;
+    width: 8em;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    background-color: #0d61ce;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.loginBtn:hover {
+    opacity: 0.6;
+
+}
+.loginBtn:active {
+    opacity: 0.4;
+}
+.prompt {
+    color: white;
+    margin-left: 2em;
+}
+.prompt-1 {
+    font-size: 15px;
+    color: red;
+    margin-left: 2em;
+}
+
+
