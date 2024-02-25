@@ -7,7 +7,7 @@ body {
 }
 .header {
   display: flex;
-  position: fixed;
+
 }
 
 .nav {
