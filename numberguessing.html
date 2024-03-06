@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <style>
+        body {
+            text-align: center;
+        }
+        header {
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+        }
+        .answer {
+            color: white;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>Number geussing game</header>
+    <input class="guess" id="userGuess" placeholder="Guess a number">
+    <button id="submitBtn" type="submit">Submit</button>
+    <p id="answer" class="answer"></p>
+
+    <script>
+        submitBtn = document.getElementById("submitBtn");
+        answer = document.getElementById("answer");
+        submitBtn = document.getElementById("submitBtn");
+        userGuess = document.getElementById("userGuess");
+
+        let max=100;
+        let min=0;
+
+        let guess = Math.floor(Math.random() * (max - min) + min);
+        console.log(guess);
+
+        submitBtn.onclick = function() {
+            if(userGuess.value > max || userGuess.Value < min) {
+                answer.textContent = "Guess out of BOUND!!";
+            }
+            else if(userGuess.value > guess) {
+                answer.textContent = "TOO HIGH!! Guess lower..";
+            }
+            else if(userGuess.value < guess) {
+                answer.textContent = "TOO LOW!! Guess higher..";
+            }
+            else if(userGuess.value == guess) {
+                answer.textContent = "Correct!!";
+            }   
+        }
+
+
+    </script>
+</body>
+</html>
